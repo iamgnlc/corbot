@@ -1,4 +1,5 @@
 module.exports = [
+  "3uro",
   "a bramarea",
   "a lancia mattin",
   "a nevvatura nevvosa",

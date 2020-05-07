@@ -1,6 +1,17 @@
 {
+  "name": "corbot",
+  "description": "random quotes from V.C.",
+  "version": "0.0.1",
+  "main": "index.js",
+  "keywords": [],
+  "author": "gnlc (https://github.com/iamgnlc/)",
+  "license": "WTFPL",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iamgnlc/corbot"
+  },
   "scripts": {
-    "dev": "./node_modules/nodemon/bin/nodemon.js index.js",
+    "dev": "NODE_ENV=development ./node_modules/nodemon/bin/nodemon.js index.js",
     "start": "node index.js"
   },
   "dependencies": {

@@ -7,6 +7,9 @@ const token = process.env.BOT_TOKEN;
 const bot = new TelegramBot(token, { polling: true });
 
 const dictionary = require("./dictionary");
+const logo = require("./logo");
+
+console.log(logo);
 
 const getRandoQuote = (match) => {
   return dictionary[Math.floor(Math.random() * dictionary.length)];

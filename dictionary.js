@@ -6,8 +6,11 @@ module.exports = [
   "o sterio ngopp o raccord",
   "cugginem affred",
   "o ranner",
+  "favia",
   "zi gennar",
+  "a uno ro zi gennar fa 300 all'or",
   "a lancia mattin",
+  "agg fatt tucca a centralin",
   "sott o pont e quart",
   "cainatem affred",
   "cerozz",
@@ -17,4 +20,5 @@ module.exports = [
   "valentino biaggi",
   "a bramarea",
   "t vuo jucà o librett?",
+  "si nu moss",
 ];

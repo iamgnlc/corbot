@@ -1,8 +1,16 @@
-const dictionary = require('./config/dictionary');
+import fetch from 'node-fetch';
+
 const names = require('./config/names');
 
 export const getRandomQuote = () => {
-  return dictionary[Math.floor(Math.random() * dictionary.length)];
+  const url = process.env.SPREADSHEET_ENDPOINT;
+  const settings = { method: 'Get' };
+
+  return fetch(url, settings)
+    .then((res) => res.json())
+    .then((res) => res.feed.entry)
+    .then((res) => res[Math.floor(Math.random() * res.length)])
+    .then((res) => res.content['$t']);
 };
 
 export const getNickName = (firstName) => {

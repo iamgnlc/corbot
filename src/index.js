@@ -9,11 +9,11 @@ const bot = new TelegramBot(process.env.BOT_TOKEN, { polling: true });
 
 console.log(logo);
 
-bot.onText(/o co(.+)?/i, (msg, match) => {
+bot.onText(/o co(.+)?/i, async (msg, _match) => {
   const chatId = msg.chat.id;
   const firstName = msg.from.first_name.toLocaleLowerCase();
   const nickName = getNickName(firstName);
-  const quote = getRandomQuote();
+  const quote = await getRandomQuote();
 
   const response = setResponse({ nickName, quote });
 

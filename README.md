@@ -33,7 +33,7 @@ $ yarn global add forever
 ### Start
 
 ```
-$ forever start index.js
+$ yarn forever
 ```
 
 ### Stop

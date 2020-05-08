@@ -11,12 +11,27 @@
     "url": "https://github.com/iamgnlc/corbot"
   },
   "scripts": {
-    "dev": "NODE_ENV=development ./node_modules/nodemon/bin/nodemon.js index.js",
-    "start": "node index.js"
+    "build": "babel src/ -d dist",
+    "start": "npm run build && node dist/",
+    "forever": "npm run build && forever start dist/",
+    "dev": "NODE_ENV=development ./node_modules/nodemon/bin/nodemon.js --exec babel-node src/",
+    "test": "NODE_ENV=test jest --coverage --no-cache --verbose --forceExit"
   },
   "dependencies": {
     "dotenv": "^8.2.0",
-    "node-telegram-bot-api": "^0.40.0",
+    "node-telegram-bot-api": "^0.40.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/node": "^7.6.3",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/runtime": "^7.6.3",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^24.9.0",
+    "jest": "^24.9.0",
+    "jest-extended": "^0.11.2",
     "nodemon": "^2.0.3"
   }
 }

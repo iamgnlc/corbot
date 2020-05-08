@@ -1,6 +1,6 @@
 {
   "name": "corbot",
-  "description": "random quotes from V.C.",
+  "description": "Telegram bot to throw random quotes from V.C.",
   "version": "0.0.1",
   "main": "index.js",
   "keywords": [],

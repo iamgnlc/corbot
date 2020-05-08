@@ -10,21 +10,19 @@ export const getRandomQuote = () => {
     .then((res) => res.json())
     .then((res) => res.feed.entry)
     .then((res) => res[Math.floor(Math.random() * res.length)])
-    .then((res) => res.content['$t']);
+    .then((res) => res.content['$t'])
+    .catch((err) => console.error(err));
 };
 
-export const getNickName = (firstName) => {
+export const getNickName = (firstName, force = null) => {
   const name = names.find((name) => {
     return name.firstName === firstName;
   });
 
-  if (name && Math.random() >= 0.6) return name.nickName;
-  else return '';
+  const show = force === null ? Math.random() >= 0.6 : force; // 0.4 = %60 probability of get "true"
 
-  // Example
-  // Math.random() >= 0.4 // %60 probability of get "true"
-  // Math.random() >= 0.5 // %50 probability of get "true"
-  // Math.random() >= 0.6 // %40 probability of get "true"
+  if (name && show) return name.nickName;
+  else return '';
 };
 
 export const setResponse = ({ nickName, quote }) => {

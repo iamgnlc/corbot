@@ -1,6 +1,11 @@
 import fetch from 'node-fetch';
 
-const names = require('./config/names');
+import names from './config/names';
+import * as photos from './config/photos';
+
+export const getPhoto = (name) => {
+  return photos[name][Math.floor(Math.random() * photos[name].length)];
+};
 
 export const getRandomQuote = () => {
   const url = process.env.SPREADSHEET_ENDPOINT;

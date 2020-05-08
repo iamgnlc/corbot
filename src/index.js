@@ -14,7 +14,8 @@ const bot = new TelegramBot(process.env.BOT_TOKEN, { polling: true });
 
 console.log(logo);
 
-bot.onText(/(ciro)|(alfredo)/i, async (msg, match) => {
+bot.onText(/(ciro|alfredo)/i, async (msg, match) => {
+  console.log(match);
   if (!match) return false;
   const chatId = msg.chat.id;
   const url = getPhoto(match[1].trim());

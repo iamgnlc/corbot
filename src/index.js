@@ -1,9 +1,9 @@
-require("dotenv").config();
+require('dotenv').config();
 
-import TelegramBot from "node-telegram-bot-api";
+import TelegramBot from 'node-telegram-bot-api';
 
-import { getNickName, getRandomQuote, setResponse } from "./functions";
-import logo from "./config/logo";
+import { getNickName, getRandomQuote, setResponse } from './functions';
+import logo from './config/logo';
 
 const bot = new TelegramBot(process.env.BOT_TOKEN, { polling: true });
 
@@ -17,9 +17,9 @@ bot.onText(/o co(.+)?/i, (msg, match) => {
 
   const response = setResponse({ nickName, quote });
 
-  if (process.env.NODE_ENV === "development") console.log(msg);
+  if (process.env.NODE_ENV === 'development') console.log(msg);
 
   bot.sendMessage(chatId, response, {
-    parse_mode: "Markdown",
+    parse_mode: 'Markdown',
   });
 });

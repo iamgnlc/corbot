@@ -19,16 +19,6 @@ export const getRandomQuote = () => {
     .catch((err) => console.error(err));
 };
 
-export const isOneOfUs = (firstName) => {
-  if (
-    names.find((name) => {
-      return name.firstName === firstName;
-    })
-  )
-    return true;
-  return false;
-};
-
 export const getNickName = (firstName, force = null) => {
   const name = names.find((name) => {
     return name.firstName === firstName;
@@ -38,6 +28,10 @@ export const getNickName = (firstName, force = null) => {
 
   if (name && show) return name.nickName;
   else return '';
+};
+
+export const isAllowed = (firstName) => {
+  return getNickName(firstName, true).length ? true : false;
 };
 
 export const setResponse = ({ nickName, quote }) => {

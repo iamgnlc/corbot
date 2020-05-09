@@ -34,7 +34,12 @@ const dispatchResponse = async () => {
 };
 
 const splitMatch = (match) => {
-  if (match) return match.trim().split(' ');
+  if (match)
+    return match
+      .trim()
+      .split(' ')
+      .filter((m) => m !== null)
+      .map((m) => m.toLowerCase());
   else return [false];
 };
 
@@ -51,11 +56,9 @@ bot.onText(/o co(.+)?/i, (msg, match) => {
   const matches = splitMatch(match[1]);
 
   matches.forEach((match) => {
-    switch (match) {
+    switch (true) {
       // Pictures.
-      case 'ciro':
-      case 'alfredo':
-      case 'monica':
+      case /(ciro|monica|alfredo)/.test(match):
         dispatchPhoto(match);
         break;
       // Quotes.

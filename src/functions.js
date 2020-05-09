@@ -19,6 +19,16 @@ export const getRandomQuote = () => {
     .catch((err) => console.error(err));
 };
 
+export const isOneOfUs = (firstName) => {
+  if (
+    names.find((name) => {
+      return name.firstName === firstName;
+    })
+  )
+    return true;
+  return false;
+};
+
 export const getNickName = (firstName, force = null) => {
   const name = names.find((name) => {
     return name.firstName === firstName;

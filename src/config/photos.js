@@ -9,4 +9,9 @@ const alfredo = [
   'https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/12219497_873360566045643_8787886474464063844_n.jpg?_nc_cat=100&_nc_sid=174925&_nc_ohc=MFZKKnCgifMAX_gLfng&_nc_ht=scontent-lht6-1.xx&oh=a963a8c084c2f9fc6b638e258995fb78&oe=5EDC4EEF',
 ];
 
-export { ciro, alfredo };
+const monica = [
+  'https://scontent-lhr8-1.xx.fbcdn.net/v/t1.0-9/36478588_2115236938762100_6148754590603935744_o.jpg?_nc_cat=109&_nc_sid=174925&_nc_ohc=h7_sYifLlRAAX8O2NoO&_nc_ht=scontent-lhr8-1.xx&oh=6bb043c4e34877b9c88993d5cdd51526&oe=5EDBF685',
+  'https://scontent-lhr8-1.xx.fbcdn.net/v/t1.0-9/12234944_1667740583511740_910898394710949715_n.jpg?_nc_cat=101&_nc_sid=174925&_nc_ohc=dL_6uOI3ZHEAX9Z1W8D&_nc_ht=scontent-lhr8-1.xx&oh=76ed19d7c399668dc73c3dd11ed65d44&oe=5EDCAA37',
+];
+
+export { ciro, alfredo, monica };

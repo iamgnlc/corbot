@@ -7,6 +7,8 @@ const ciro = [
 const alfredo = [
   'https://scontent-lhr8-1.xx.fbcdn.net/v/t1.0-9/12241357_873360156045684_249091343406599727_n.jpg?_nc_cat=111&_nc_sid=174925&_nc_ohc=3gykVISKh8kAX_aBKat&_nc_ht=scontent-lhr8-1.xx&oh=2c4fdc77b31849433017c6e0d2a1b75f&oe=5EDAB19C',
   'https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/12219497_873360566045643_8787886474464063844_n.jpg?_nc_cat=100&_nc_sid=174925&_nc_ohc=MFZKKnCgifMAX_gLfng&_nc_ht=scontent-lht6-1.xx&oh=a963a8c084c2f9fc6b638e258995fb78&oe=5EDC4EEF',
+  'https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/11951195_10207367684940606_8833912758003525807_n.jpg?_nc_cat=105&_nc_sid=19026a&_nc_ohc=S384asHtGi0AX8T7zp6&_nc_ht=scontent-lht6-1.xx&oh=82a37a8a4918b753c6a6fe5e5e47b0c3&oe=5EF21F46',
+  'https://media-exp1.licdn.com/dms/image/C4D03AQGeToiaj4mX6Q/profile-displayphoto-shrink_800_800/0?e=1596067200&v=beta&t=zwnPPXkdVin0JSvohvenx36DEx5j40Qg3v84C1HT234',
 ];
 
 const monica = [

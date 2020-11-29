@@ -43,7 +43,7 @@ const splitMatch = (match) => {
   else return [false];
 };
 
-bot.onText(/o co(.+)?/i, (msg, match) => {
+bot.onText(/^o co(.+)?/i, (msg, match) => {
   if (process.env.NODE_ENV === 'development') console.log(msg);
 
   const firstName = msg.from.first_name.toLowerCase();

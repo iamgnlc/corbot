@@ -12,10 +12,11 @@ export const getRandomQuote = () => {
   const settings = { method: 'Get' };
 
   return fetch(url, settings)
-    .then((res) => res.json())
-    .then((res) => res.feed.entry)
+    .then((res) => res.text())
+    .then((text) => JSON.parse(text.substr(47).slice(0, -2)))
+    .then((res) => res.table.rows)
     .then((res) => res[Math.floor(Math.random() * res.length)])
-    .then((res) => res.content['$t'])
+    .then((res) => res.c[0].v)
     .catch((err) => console.error(err));
 };
 

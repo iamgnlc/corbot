@@ -58,7 +58,7 @@ bot.onText(/^o co(.+)?/i, (msg, match) => {
   matches.forEach((match) => {
     switch (true) {
       // Pictures.
-      case /(ciro|monica|alfredo)/.test(match):
+      case /(ciro|monica|alfredo|gennaro)/.test(match):
         dispatchPhoto(match);
         break;
       // Quotes.

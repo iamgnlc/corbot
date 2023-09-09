@@ -19,4 +19,8 @@ const monica = [
   'https://scontent-lhr8-1.xx.fbcdn.net/v/t1.0-9/12234944_1667740583511740_910898394710949715_n.jpg?_nc_cat=101&_nc_sid=174925&_nc_ohc=dL_6uOI3ZHEAX9Z1W8D&_nc_ht=scontent-lhr8-1.xx&oh=76ed19d7c399668dc73c3dd11ed65d44&oe=5EDCAA37',
 ];
 
-export { ciro, alfredo, monica };
+const gennaro = [
+  'https://scontent-lcy1-1.xx.fbcdn.net/v/t1.18169-9/29188_1269668787904_1062376_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=ZgD7-TrVF8cAX9dsL_Z&_nc_ht=scontent-lcy1-1.xx&oh=00_AfA_MYniRDaV4HSjz3QRVmdmgb1U1uYv2F9g6ei0K18HWA&oe=652444B5',
+];
+
+export { ciro, alfredo, monica, gennaro };
